@@ -144,10 +144,16 @@ footer .about-us {
     margin: auto;
     color: #e5e5e5;
 }
-
+.cont-us h6{
+    text-transform: uppercase;
+    display: inline-block;
+}
+.cont-us span{
+    color: #c1bebe;
+}
 footer .copyright {
     color: #7f7c7c;
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
 
 .hl2line {
