@@ -126,6 +126,7 @@ body {
 */
 footer {
     padding: 50px 10px;
+    padding: 20px 10px 0px;
     background-color: rgba(47, 46, 46, 1);
     background-color: rgb(26, 25, 25);
     color: #fff;
@@ -152,7 +153,7 @@ footer .about-us {
 
 .cont-us h6{
     color: #f5f5f5;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.45rem;
 }
 .cont-us .email-co{
@@ -161,7 +162,8 @@ footer .about-us {
 }
 footer .copyright {
     color: #7f7c7c;
-    margin-top: 25px;
+    margin-top: 10px;
+    font-size: 15px;
 }
 
 .hl2line {
