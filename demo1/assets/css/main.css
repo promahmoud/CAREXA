@@ -40,13 +40,19 @@ body {
 ** =================================
 */
 .navbar {
-    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(0, 0, 0, 0.6), 0 0 5px rgba(0, 0, 0, 0.6);
-    background-color: rgba(0, 138, 252, 1);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(167, 165, 165, 0.6), 0 0 5px rgba(0, 0, 0, 0.6);
     border-top: 0px solid rgba(47, 46, 46, 1);
     border-bottom: 0px solid rgba(47, 46, 46, 1);
-    background-image: linear-gradient(to right top, #0a7aba, #0270a8, #006597, #025b86, #055175);
+    background-color: #fff;
+    /* background-image: linear-gradient(to right top, #0a7aba, #0270a8, #006597, #025b86, #055175); */
 }
 
+.navbar-dark .navbar-brand {
+    color: #035983;
+}
+.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover{
+    color: #035983;
+}
 .navbar-brand {
     display: flex;
     justify-content: center;
@@ -80,7 +86,9 @@ body {
     transform-origin: left;
     transition: transform 0.5s;
 }
-
+.navbar-dark .navbar-nav .nav-link{
+    color: #555;
+}
 .nav-item.active::before {
     transform: scaleX(1);
 }
@@ -199,7 +207,12 @@ footer .copyright {
     background: url("../img/sliderImg/img4.jpg");
 }
 .Carexa-header .caption {
-    margin-top: 10px;
+    position: absolute;
+    bottom: 6px;
+    background: rgba(221, 221, 221, .7);
+    right: 40px;
+    padding: 16px;
+    border-radius: 5px;
 }
 .Carexa-header .caption h3 {
     font-size: 1.2rem;
@@ -214,7 +227,7 @@ footer .copyright {
 .Carexa-header .slider-counter {
     position: absolute;
     right: 20px;
-    bottom: 4.35rem;
+    bottom: -0.65rem;
     font-size: 14px;
     color: #555;
     font-family: sans-serif;
@@ -224,7 +237,7 @@ footer .copyright {
     width: 60px;
     position: absolute;
     right: 0;
-    bottom: 3.75rem;
+    bottom: -1.25rem;
     color: #555;
 }
 
@@ -303,7 +316,7 @@ footer .copyright {
 ** =================================
 */
 .our-services {
-    margin-top: 5.5rem;
+    margin-top: 3.5rem;
     margin-bottom: 5rem;
 }
 
@@ -322,12 +335,6 @@ footer .copyright {
     transition: all .5s ease;
     cursor: pointer;
     border-bottom: 5px solid transparent;
-}
-
-.card:hover {
-    transform: translateY(-7px);
-    box-shadow: unset;
-    border-bottom: 5px solid steelblue;
 }
 
 .our-services .card-title {
@@ -597,26 +604,23 @@ footer .copyright {
     font-weight: 600;
     margin: 0 0 6px;
     color: #444;
+    margin-bottom: 40px;
 }
-.quickview-content .price {
-    font-size: 20px;
-    margin: 12px 0 20px;
-    font-weight: 600;
-}
-.quickview-content .quickview-peragraph p {
+
+.quickview-content .description p {
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
     color: #333;
 }
-.quickview-content .quickview-peragraph ul{
+.quickview-content .description ul{
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
     color: #333;
     list-style: circle;
 }
-.quickview-content .quickview-peragraph li{
+.quickview-content .description li{
     margin-left: 40px;
 }
 .ti-eye {

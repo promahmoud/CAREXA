@@ -33,8 +33,6 @@ body {
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: url('../img/bg-grey.svg');
-    background-attachment: fixed;
 }
 
 /* =================================
@@ -311,12 +309,13 @@ footer .copyright {
 
 .ser_wrapper {
     padding: 20px;
-    border: 3px solid #fff;
+    border: 2px solid #ddd;
     border-radius: 19px;
 }
 
 .card {
     width: 100%;
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.5);
     padding: 20px 10px;
     border-radius: 17px;
     margin-top: 20px;
@@ -329,8 +328,6 @@ footer .copyright {
     transform: translateY(-7px);
     box-shadow: unset;
     border-bottom: 5px solid steelblue;
-    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.5);
-
 }
 
 .our-services .card-title {
