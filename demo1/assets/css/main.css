@@ -133,14 +133,15 @@ footer {
 footer .about-us span {
     color: rgb(255, 255, 255);
     color: rgb(203, 97, 89);
+    color: rgb(45, 111, 187);
     font-family: "Felix Titling", sans-serif;
     font-size: 22px;
 
 }
 
 footer .about-us {
-    font-size: 12px;
-    width: 70%;
+    font-size: 14px;
+    width: 72%;
     margin: auto;
     color: #e5e5e5;
 }
