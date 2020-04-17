@@ -606,7 +606,9 @@ footer .copyright {
     color: #444;
     margin-bottom: 40px;
 }
-
+.quickview-content .description h4{
+    color: #444;
+}
 .quickview-content .description p {
     font-size: 15px;
     line-height: 24px;
