@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/53499479/get-exact-value-by-key-or-id-from-json-file-using-jquery
