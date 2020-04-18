@@ -447,6 +447,12 @@ footer .copyright {
     color: #fff;
     background: #111;
 }
+.infos{
+    margin-top: 22%;
+}
+.infos h6{
+    font-size: 1.5rem;
+}
 /*  ================================ 
 *** Start  Products page  ***
 ** =================================
