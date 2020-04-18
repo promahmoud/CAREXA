@@ -235,7 +235,8 @@ footer .copyright {
 .Carexa-header .caption {
     position: absolute;
     bottom: 6px;
-    background: rgba(221, 221, 221, .7);
+    background: rgba(221, 221, 221, .8);
+    /* background: rgba(198, 196, 196, 0.7); */
     right: 40px;
     padding: 16px;
     border-radius: 5px;
