@@ -18,7 +18,7 @@ $(function () {
 		autoplay: true,
 		// animateOut: 'fadeOut',
 		autoplayTimeout: 4000,
-		autoplayHoverPause: false,
+		autoplayHoverPause: true,
     });
 
     $('.slider').on('changed.owl.carousel', function (event) {

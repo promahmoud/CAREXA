@@ -34,13 +34,13 @@
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#about-us">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="products.html">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contact-cont">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -220,7 +220,93 @@
     </div>
 </section>
 <!--END OUR SERVICES-->
-
+<!-- Start About Us-->
+<section class="about-us-home" id="about-us">
+    <div class="container">
+        <div class="about-wrapper">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info">
+                        <h3>Who We Are</h3>
+                        <p>
+                            <span>Carexa</span> is established by a team of professionals with decades of experience in supply chain and manufacturing in asia. our aim is to provide quality products at the maximum reliability and service. we speak your language, English, Chinese, Spanish, German, Tagalog, and Arabic.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-">
+                    <div class="left-img">
+                        <img src="assets/img/sliderImg/img11.jpg" class="img-fluid" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End About Us-->
+<section id="contact-cont" class="contact">
+    <div class="container">
+        <div class="title">
+            <!-- <h1>Contact</h1> -->
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="infos background-gradient">
+                    <div class="email">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:Sales@carexa.net">Sales@carexa.net</a>
+                        Need bulk order ?
+                        CONTACT US Sales@carexa.net
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-12">
+                <div class="form">
+                    <form id="my_form" method="post" onsubmit="submitForm(); return false;">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input id="name" class="form-control" type="text" name="name" placeholder="Your Name" required="">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input id="address" class="form-control" type="text" name="address" placeholder="Address" required="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <input id="email" class="form-control" type="email" name="email" placeholder="Your Email" required="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <input id="phone" class="form-control" type="tel" name="phone" placeholder="Your Phone">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input id="subject" class="form-control" type="text" name="subject" placeholder="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="form-group">
+                                <textarea id="msg" class="form-control" placeholder="Write Your message here ..." required=""></textarea>
+                            </div>
+                            <p class="send-btn">
+                                <span>
+                                    <input id="btn" class="btn" type="submit" value="Send Message"><i class="fas fa-long-arrow-alt-right"></i>
+                                </span>
+                                <span id="status"></span>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!---START FOOTER-->
 <footer>
     <div class="container">
@@ -229,7 +315,7 @@
                 <div class="cont-us mt-1">
                     <h6> 
                         Need bulk order ? <br>
-                        <span class="text-uppercase"> Contact Us </span>  <span class="email-co"> info@carexa.net</span> 
+                        <span class="text-uppercase"> Contact Us </span>  <span class="email-co"> Sales@carexa.net</span> 
                     </h6>
                 </div>
 

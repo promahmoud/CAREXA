@@ -28,7 +28,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -141,7 +143,6 @@ footer .about-us span {
     color: rgb(45, 111, 187);
     font-family: "Felix Titling", sans-serif;
     font-size: 22px;
-
 }
 
 footer .about-us {
@@ -197,6 +198,7 @@ footer .copyright {
 }
 
 .Carexa-header .imgSlider {
+    position: relative;
     width: 100%;
     height: 265px;
     color: white;
@@ -206,7 +208,15 @@ footer .copyright {
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(0, 0, 0, 0.6), 0 0 5px rgba(0, 0, 0, 0.6);
 
 }
-
+.Carexa-header .imgSlider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+}
 .Carexa-header .slider_wrapper .img1 {
     background: url("../img/sliderImg/img11.jpg");
 }
@@ -232,13 +242,13 @@ footer .copyright {
 }
 .Carexa-header .caption h3 {
     font-size: 1.2rem;
-    color: #333;
+    color: #111;
     font-weight: 400;
     margin-bottom: 2px;
 }
 .Carexa-header .caption p{
     font-size: .9rem;
-    color: #444;
+    color: #222;
 }
 .Carexa-header .slider-counter {
     position: absolute;
@@ -336,8 +346,10 @@ footer .copyright {
     margin-bottom: 5rem;
 }
 
-.ser_wrapper {
+.ser_wrapper,
+.about-wrapper {
     padding: 20px;
+    padding-bottom: 45px;
     border: 2px solid #ddd;
     border-radius: 19px;
 }
@@ -345,6 +357,7 @@ footer .copyright {
 .card {
     width: 100%;
     box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.5);
+    box-shadow:0px 2px 9px rgba(0, 0, 0, 0.5);
     padding: 20px 10px;
     border-radius: 17px;
     margin-top: 20px;
@@ -381,8 +394,59 @@ footer .copyright {
 /*   *** End Our services  ***
 ** =================================
 */
+/*  ================================ 
+*** Start  About Us  ***
+** =================================
+*/
+.about-us-home{
+    padding: 70px 0;
+    /* background-color: #f5f5f5; */
+}
+.about-us-home h3{
+    position: relative;
+    font-size: 42px;
+    color: #1e1e1e;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.about-us-home h3::before{
+    content: 'Who We Are';
+    position: absolute;
+    color: #efefef;
+    text-transform: uppercase;
+    left: -5px;
+    top: 12px;
+    z-index: -1;
+}
+.about-us-home p{
+    font-size: 17px;
+    line-height: 2.2rem;
+    color:#666;
+}
+.about-us-home span {
+    color: rgb(203, 97, 89);
+    color: rgb(45, 111, 187);
+    font-family: "Felix Titling", sans-serif;
+    font-size: 22px;
+}
 
 
+/*  ================================ 
+*   *** Start Contact us  ***
+** =================================
+*/
+.contact{
+    background: #f5f5f5;
+    padding: 60px 0 ;
+}
+.contact .send-btn{
+    text-align: right;
+}
+.contact .send-btn input{
+    color: #fff;
+    background: #111;
+}
 /*  ================================ 
 *** Start  Products page  ***
 ** =================================
@@ -398,7 +462,7 @@ footer .copyright {
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 2.625rem;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
 }
 
