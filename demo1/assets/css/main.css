@@ -159,8 +159,8 @@ footer .about-us {
 }
 .cont-us .email-co{
     color: #c1bebe;
-
 }
+.email-co a{font-size: 20px;}
 footer .copyright {
     color: #7f7c7c;
     margin-top: 10px;
@@ -357,14 +357,13 @@ footer .copyright {
 
 .card {
     width: 100%;
-    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.5);
-    box-shadow:0px 2px 4px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.5); */
+    /* box-shadow:0px 2px 4px rgba(0, 0, 0, 0.5); */
     padding: 20px 10px;
     border-radius: 17px;
     margin-top: 20px;
     transition: all .5s ease;
-    cursor: pointer;
-    border-bottom: 5px solid transparent;
+    /* border-bottom: 5px solid transparent; */
 }
 
 .our-services .card-title {
