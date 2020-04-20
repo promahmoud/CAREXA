@@ -56,7 +56,9 @@ body {
     color: #035983;
 }
 .navbar-brand {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Eras Demi', sans-serif;
 }
 
@@ -70,17 +72,8 @@ body {
     font-size: 28px;
     margin-bottom: 0;
     font-weight: bold;
-    display: inline-block;
 }
-.navbar-brand span{
-    display: block;
-    font-size: 14px;
-    position: absolute;
-    top: 43px;
-    left: 8rem;
-    font-style: italic;
-    color: #333;
-}
+
 .nav-item .nav-link{
     position: relative;
     margin-left: 8px;
@@ -201,7 +194,7 @@ footer .copyright {
 ** =================================
 */
 .Carexa-header .slider_wrapper {
-    margin-top: 5.6rem;
+    margin-top: 6.5rem;
     position: relative;
 }
 
@@ -344,7 +337,26 @@ footer .copyright {
 /*
 **   *** End Header ***
 ** =================================*/
-
+.home-products {
+    margin: 5rem 0 !important;
+}
+.home-products h3{
+    position: relative;
+    font-size: 42px;
+    color: #1e1e1e;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.home-products h3::before{
+    content: 'OUR PRODUCTS';
+    position: absolute;
+    color: #efefef;
+    text-transform: uppercase;
+    left: -5px;
+    top: 12px;
+    z-index: -1;
+}
 /* =================================
 **    Start Our services 
 ** =================================
@@ -353,28 +365,10 @@ footer .copyright {
     margin-top: 3.5rem;
     margin-bottom: 5rem;
 }
-.section__title h3{
-    position: relative;
-    font-size: 42px;
-    color: #1e1e1e;
-    text-transform: uppercase;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.section__title h3::before{
-    position: absolute;
-    color: #efefef;
-    text-transform: uppercase;
-    left: -5px;
-    top: 12px;
-    z-index: -1;
-}
-.our-services .section__title h3::before{
-    content: "Our products";
-    left: 36%;
-}
+
 .ser_wrapper,
-.about-wrapper{
+.about-wrapper,
+.home-products .products_wrapper {
     padding: 20px;
     padding-bottom: 45px;
     border: 2px solid #ddd;
@@ -384,7 +378,7 @@ footer .copyright {
 .card {
     width: 100%;
     /* box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.5); */
-    box-shadow:0px 2px 4px rgba(0, 0, 0, 0.5);
+    /* box-shadow:0px 2px 4px rgba(0, 0, 0, 0.5); */
     padding: 20px 10px;
     border-radius: 17px;
     margin-top: 20px;
@@ -428,7 +422,23 @@ footer .copyright {
     padding: 70px 0;
     /* background-color: #f5f5f5; */
 }
-.about-us-home .section__title h3::before{ content: 'Who We Are';}
+.about-us-home h3{
+    position: relative;
+    font-size: 42px;
+    color: #1e1e1e;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.about-us-home h3::before{
+    content: 'Who We Are';
+    position: absolute;
+    color: #efefef;
+    text-transform: uppercase;
+    left: -5px;
+    top: 12px;
+    z-index: -1;
+}
 .about-us-home p{
     font-size: 17px;
     line-height: 2.2rem;
@@ -449,6 +459,9 @@ footer .copyright {
 .contact{
     background: #f5f5f5;
     padding: 60px 0 ;
+}
+.cont_wrapper{
+    margin-top: 2rem;
 }
 .contact .send-btn{
     text-align: right;
