@@ -481,7 +481,13 @@ footer .copyright {
     text-align: left;
     text-transform: uppercase;
 }
-
+.our-Products .section__title h3{
+    line-height: 2.625rem;
+    margin: 0 0 45px;
+}
+.our-Products .section__title h3::before{
+    content: "OUR PRODUCTS";
+}
 .at-grid {
     width: 900px;
     margin: auto;
