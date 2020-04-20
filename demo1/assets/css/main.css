@@ -12,8 +12,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import url("https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 @font-face {
 
-    font-family: 'Felix Titling';
-    src: url('../font/Felixti.TTF') format('truetype');
+    font-family: 'Eras Demi';
+    src: url('../font/ERASDEMI.TTF') format('truetype');
 
 }
 
@@ -59,8 +59,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Felix Titling", sans-serif;
-    
+    font-family: 'Eras Demi', sans-serif;
 }
 
 .navbar-brand img {
@@ -141,7 +140,7 @@ footer .about-us span {
     color: rgb(255, 255, 255);
     color: rgb(203, 97, 89);
     color: rgb(45, 111, 187);
-    font-family: "Felix Titling", sans-serif;
+    font-family: 'Eras Demi', sans-serif;
     font-size: 22px;
 }
 
@@ -427,7 +426,7 @@ footer .copyright {
 .about-us-home span {
     color: rgb(203, 97, 89);
     color: rgb(45, 111, 187);
-    font-family: "Felix Titling", sans-serif;
+    font-family: "Eras Demi", sans-serif;
     font-size: 22px;
 }
 
