@@ -1,15 +1,5 @@
 $(function () {
 
-    //Scroll
-    $.scrollIt({
-        upKey: 25, // key code to navigate to the next section
-        downKey: 25, // key code to navigate to the previous section
-        easing: 'linear', // the easing function for animation
-        scrollTime: 100, // how long (in ms) the animation takes
-        activeClass: 'active', // class given to the active nav element
-        onPageChange: null,
-        topOffset: -60 // function(pageIndex) that is called when page is changed
-    });
     $('.slider').on('initialized.owl.carousel changed.owl.carousel', function (e) {
         if (!e.namespace) {
             return;

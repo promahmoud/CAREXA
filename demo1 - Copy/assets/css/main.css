@@ -74,17 +74,15 @@ body {
     font-weight: bold;
 }
 
-.nav-item .nav-link{
+.nav-item {
     position: relative;
     margin-left: 8px;
-    cursor: pointer;
 }
 
-.nav-item .nav-link::before {
+.nav-item::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 0;
     width: 100%;
     height: 3px;
     background: var(--gradient-color);
@@ -95,11 +93,11 @@ body {
 .navbar-dark .navbar-nav .nav-link{
     color: #555;
 }
-.nav-item .nav-link.active::before {
+.nav-item.active::before {
     transform: scaleX(1);
 }
 
-.nav-item .nav-link:hover::before {
+.nav-item:hover::before {
     transform: scaleX(1);
 }
 
@@ -337,26 +335,7 @@ footer .copyright {
 /*
 **   *** End Header ***
 ** =================================*/
-.home-products {
-    margin: 5rem 0 !important;
-}
-.home-products h3{
-    position: relative;
-    font-size: 42px;
-    color: #1e1e1e;
-    text-transform: uppercase;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.home-products h3::before{
-    content: 'Who We Are';
-    position: absolute;
-    color: #efefef;
-    text-transform: uppercase;
-    left: -5px;
-    top: 12px;
-    z-index: -1;
-}
+
 /* =================================
 **    Start Our services 
 ** =================================
@@ -367,8 +346,7 @@ footer .copyright {
 }
 
 .ser_wrapper,
-.about-wrapper,
-.home-products .products_wrapper {
+.about-wrapper{
     padding: 20px;
     padding-bottom: 45px;
     border: 2px solid #ddd;
@@ -459,9 +437,6 @@ footer .copyright {
 .contact{
     background: #f5f5f5;
     padding: 60px 0 ;
-}
-.cont_wrapper{
-    margin-top: 2rem;
 }
 .contact .send-btn{
     text-align: right;
