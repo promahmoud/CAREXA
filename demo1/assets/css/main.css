@@ -349,7 +349,7 @@ footer .copyright {
     margin-bottom: 25px;
 }
 .home-products h3::before{
-    content: 'Who We Are';
+    content: 'OUR PRODUCTS';
     position: absolute;
     color: #efefef;
     text-transform: uppercase;
