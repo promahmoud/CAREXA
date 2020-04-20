@@ -123,8 +123,12 @@ body {
 .navbar-dark .navbar-nav .show>.nav-link {
     color: #f7a321;
 }
+.navbar-dark .navbar-toggler{
+    background-color: #035983;
+}
+
 @media only screen and (max-width: 767px) {
-    .nav-item::before{
+    .nav-item .nav-link::before{
         content: unset;
     }
 }
@@ -405,6 +409,9 @@ footer .copyright {
     font-size: 15px;
 }
 @media only screen and (max-width: 767px) {
+    .our-services .section__title h3::before{
+        left: 48px;
+    }
     .Carexa-header .caption p{
         font-size: .8rem;
     }
@@ -441,7 +448,11 @@ footer .copyright {
     font-family: "Eras Demi", sans-serif;
     font-size: 22px;
 }
-
+@media only screen and (max-width: 767px) {
+    .about-us-home p{
+        font-size: 15px;
+    }
+}
 
 /*  ================================ 
 *   *** Start Contact us  ***
@@ -775,5 +786,4 @@ footer .copyright {
     .at-section__title{
         font-size: 2.5rem;
     }
-  
 }
