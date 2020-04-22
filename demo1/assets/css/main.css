@@ -177,7 +177,9 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-
+    .dropdown-toggle::after{
+        content: unset;
+    }
     .navbar-nav>li>.dropdown-menu {
         margin-top: 0;
         border-top-left-radius: 0;
@@ -225,7 +227,6 @@ body {
     .nav-item .nav-link::before {
         content: unset;
     }
-
     .dropdown-menu::after {
         left: 10px;
         top: 34px;
@@ -332,7 +333,6 @@ footer .worldwide p {
 **   *** End Footer ****
 ** =================================
 */
-
 
 /* =================================
 **    Start Header === Slider =====
