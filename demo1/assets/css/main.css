@@ -10,6 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+
 @font-face {
 
     font-family: 'Eras Demi';
@@ -28,9 +29,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -52,9 +55,12 @@ body {
 .navbar-dark .navbar-brand {
     color: #035983;
 }
-.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover{
+
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-brand:hover {
     color: #035983;
 }
+
 .navbar-brand {
     position: relative;
     font-family: 'Eras Demi', sans-serif;
@@ -72,7 +78,8 @@ body {
     font-weight: bold;
     display: inline-block;
 }
-.navbar-brand span{
+
+.navbar-brand span {
     display: block;
     font-size: 14px;
     position: absolute;
@@ -82,7 +89,8 @@ body {
     color: #333;
     font-family: monospace;
 }
-.nav-item .nav-link{
+
+.nav-item .nav-link {
     position: relative;
     margin-left: 8px;
     cursor: pointer;
@@ -100,9 +108,11 @@ body {
     transform-origin: left;
     transition: transform 0.5s;
 }
-.navbar-dark .navbar-nav .nav-link{
+
+.navbar-dark .navbar-nav .nav-link {
     color: #555;
 }
+
 .nav-item .nav-link.active::before {
     transform: scaleX(1);
 }
@@ -123,22 +133,88 @@ body {
 .navbar-dark .navbar-nav .show>.nav-link {
     color: #f7a321;
 }
-.navbar-dark .navbar-toggler{
+.dropdown-menu{
+    position: relative;
+    border: none;
+    box-shadow: 0 1px 6px rgba(57,73,76,.35);
+}
+.dropdown-menu::after{
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 20%;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #dbd8d8;
+}
+.dropdown-item{
+    border-left: 5px solid transparent;
+    transition: all .4s ease;
+    color: #555 !important;
+    margin-bottom: 2px;
+}
+
+.dropdown-item:hover{
+    cursor: pointer;
+    color: #f7a321 !important;
+    border-left: 5px solid #f7a321;
+}
+.dropdown-item.active, .dropdown-item:active{
+    background: #fff;
+    color: #f7a628 !important;
+    border-left: 5px solid #f7a321;
+}
+.navbar-dark .navbar-toggler {
     background-color: #035983;
 }
 
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: block;
+    transform: scale(0);
+    transition: ease-out 0.3s;
+}
+
+.dropdown:hover .dropdown-menu {
+    transform: scale(1);
+}
+
+.dropdown-menu1 {
+    border: none;
+    display: block;
+    transform: scale(1) !important;
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+    top: 180px;
+    transition: all .3s;
+}
+
+.dropdown:hover .dropdown-menu1 {
+    display: block;
+    top: 100%;
+    height: inherit;
+}
+
 @media only screen and (max-width: 767px) {
-    .navbar-brand img{
+    .navbar-brand img {
         width: 5rem;
     }
-    .navbar-brand span{
+
+    .navbar-brand span {
         font-size: 13px;
         left: 5rem;
     }
-    .nav-item .nav-link::before{
+
+    .nav-item .nav-link::before {
         content: unset;
     }
 }
+
 /*   ***  End Navbar ***
 ** =================================*/
 
@@ -172,28 +248,36 @@ footer .about-us {
     color: #e5e5e5;
 }
 
-.cont-us h6{
+.cont-us h6 {
     color: #f5f5f5;
     font-size: 15px;
     line-height: 1.45rem;
 }
-.cont-us .email-co{
+
+.cont-us .email-co {
     color: #c1bebe;
 }
-.email-co a{font-size: 20px;}
+
+.email-co a {
+    font-size: 20px;
+}
+
 footer .copyright {
     color: #7f7c7c;
     margin-top: -5px;
     font-size: 15px;
     text-align: right;
 }
-footer .worldwide{
+
+footer .worldwide {
     text-align: right;
 }
-footer .worldwide p{
+
+footer .worldwide p {
     display: inline-block;
     text-transform: uppercase;
 }
+
 .hl2line {
     display: block;
     width: 70%;
@@ -203,22 +287,29 @@ footer .worldwide p{
     border-bottom: 1px solid rgba(160, 160, 159, 1);
     padding: 3px 0 0 0;
 }
+
 @media only screen and (max-width: 767px) {
     footer .about-us {
         width: 80%;
         margin: unset;
     }
-    footer .worldwide{
+
+    footer .worldwide {
         padding-top: 10px;
         border-top: 1px solid #ddd;
     }
-    footer .worldwide img{width: 30px;}
+
+    footer .worldwide img {
+        width: 30px;
+    }
+
     footer .worldwide,
     footer .copyright {
         margin-top: 10px;
         text-align: left;
     }
 }
+
 /*
 **   *** End Footer ****
 ** =================================
@@ -245,15 +336,17 @@ footer .worldwide p{
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(0, 0, 0, 0.6), 0 0 5px rgba(0, 0, 0, 0.6);
 
 }
+
 .Carexa-header .imgSlider::after {
     /* content: ""; */
     position: absolute;
     top: 0;
-    bottom:0;
+    bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
 }
+
 .Carexa-header .slider_wrapper .img1 {
     background: url("../img/sliderImg/img11.jpg");
 }
@@ -269,6 +362,7 @@ footer .worldwide p{
 .Carexa-header .slider_wrapper .img4 {
     background: url("../img/sliderImg/img4.jpg");
 }
+
 .Carexa-header .caption {
     position: absolute;
     bottom: 6px;
@@ -278,16 +372,19 @@ footer .worldwide p{
     padding: 16px;
     border-radius: 5px;
 }
+
 .Carexa-header .caption h3 {
     font-size: 1.2rem;
     color: #111;
     font-weight: 400;
     margin-bottom: 2px;
 }
-.Carexa-header .caption p{
+
+.Carexa-header .caption p {
     font-size: .9rem;
     color: #222;
 }
+
 .Carexa-header .slider-counter {
     position: absolute;
     right: 20px;
@@ -382,7 +479,8 @@ footer .worldwide p{
     margin-top: 3.5rem;
     margin-bottom: 5rem;
 }
-.section__title h3{
+
+.section__title h3 {
     position: relative;
     font-size: 42px;
     color: #555;
@@ -390,7 +488,8 @@ footer .worldwide p{
     margin-top: 25px;
     margin-bottom: 25px;
 }
-.section__title h3::before{
+
+.section__title h3::before {
     position: absolute;
     color: #efefef;
     text-transform: uppercase;
@@ -398,12 +497,14 @@ footer .worldwide p{
     top: 12px;
     z-index: -1;
 }
-.our-services .section__title h3::before{
+
+.our-services .section__title h3::before {
     content: "Our products";
     left: 36%;
 }
+
 .ser_wrapper,
-.about-wrapper{
+.about-wrapper {
     padding: 20px;
     padding-bottom: 45px;
     border: 2px solid #ddd;
@@ -413,7 +514,7 @@ footer .worldwide p{
 .card {
     width: 100%;
     /* box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.5); */
-    box-shadow:0px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 20px 10px;
     border-radius: 17px;
     margin-top: 20px;
@@ -432,24 +533,30 @@ footer .worldwide p{
     color: #666;
     font-size: 15px;
 }
+
 @media only screen and (max-width: 767px) {
-    .section__title h3{
+    .section__title h3 {
         font-size: 30px;
     }
-    .our-services{
+
+    .our-services {
         margin-bottom: 2rem;
     }
-    .our-services .section__title h3::before{
+
+    .our-services .section__title h3::before {
         left: 48px;
     }
-    .Carexa-header .caption p{
+
+    .Carexa-header .caption p {
         font-size: .8rem;
     }
+
     .our-services .card-title {
         font-size: 14px;
         font-weight: 500;
         color: #555;
     }
+
     .our-services .service-details li {
         font-size: 13px;
     }
@@ -463,24 +570,30 @@ footer .worldwide p{
 *** Start  About Us  ***
 ** =================================
 */
-.about-us-home{
+.about-us-home {
     padding: 70px 0;
     /* background-color: #f5f5f5; */
 }
-.about-us-home .section__title h3::before{ content: 'Who We Are';}
-.about-us-home p{
+
+.about-us-home .section__title h3::before {
+    content: 'Who We Are';
+}
+
+.about-us-home p {
     font-size: 17px;
     line-height: 2.2rem;
-    color:#666;
+    color: #666;
 }
+
 .about-us-home span {
     color: rgb(203, 97, 89);
     color: rgb(45, 111, 187);
     font-family: "Eras Demi", sans-serif;
     font-size: 22px;
 }
+
 @media only screen and (max-width: 767px) {
-    .about-us-home p{
+    .about-us-home p {
         font-size: 15px;
     }
 }
@@ -489,31 +602,37 @@ footer .worldwide p{
 *   *** Start Contact us  ***
 ** =================================
 */
-.contact{
+.contact {
     background: #f5f5f5;
-    padding: 60px 0 ;
+    padding: 60px 0;
 }
-.contact .send-btn{
+
+.contact .send-btn {
     text-align: right;
 }
-.contact .send-btn input{
+
+.contact .send-btn input {
     color: #fff;
     background: #111;
 }
-.contact .infos{
+
+.contact .infos {
     margin-top: 22%;
 }
-.contact  .infos h6{
+
+.contact .infos h6 {
     font-size: 1.5rem;
     color: #555;
 }
+
 @media only screen and (max-width: 767px) {
-    .contact .infos{
+    .contact .infos {
         margin-top: 0;
         margin-bottom: 4rem;
     }
 
 }
+
 /*  ================================ 
 *** Start  Products page  ***
 ** =================================
@@ -532,13 +651,16 @@ footer .worldwide p{
     text-align: left;
     text-transform: uppercase;
 }
-.our-Products .section__title h3{
+
+.our-Products .section__title h3 {
     line-height: 2.625rem;
     margin: 0 0 45px;
 }
-.our-Products .section__title h3::before{
+
+.our-Products .section__title h3::before {
     content: "OUR PRODUCTS";
 }
+
 .at-grid {
     width: 900px;
     margin: auto;
@@ -670,7 +792,7 @@ footer .worldwide p{
         width: 1358px;
     }
 
- 
+
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 1366px) {
@@ -737,14 +859,17 @@ footer .worldwide p{
 .modal-dialog .quickview-slider-active img {
     width: 100%;
 }
+
 .product-gallery {
     padding: 18px;
 }
-@media (max-width: 1200px){
-.product-gallery {
-    margin-top: 40px;
+
+@media (max-width: 1200px) {
+    .product-gallery {
+        margin-top: 40px;
+    }
 }
-}
+
 .single-slider {
     border: 1px solid #ddd;
 }
@@ -752,6 +877,7 @@ footer .worldwide p{
 .quickview-content {
     padding: 40px 40px;
 }
+
 .quickview-content h2 {
     font-size: 22px;
     font-weight: 600;
@@ -759,25 +885,30 @@ footer .worldwide p{
     color: #444;
     margin-bottom: 40px;
 }
-.quickview-content .description h4{
+
+.quickview-content .description h4 {
     color: #444;
 }
+
 .quickview-content .description p {
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
     color: #333;
 }
-.quickview-content .description ul{
+
+.quickview-content .description ul {
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
     color: #333;
     list-style: circle;
 }
-.quickview-content .description li{
+
+.quickview-content .description li {
     margin-left: 40px;
 }
+
 .ti-eye {
     width: 25px;
 }
@@ -815,13 +946,15 @@ footer .worldwide p{
 .view_details a:hover::before {
     transform: scaleX(1);
 }
+
 @media only screen and (max-width: 600px) {
     .at-grid {
         width: 410px;
     }
 }
+
 @media only screen and (max-width: 767px) {
-    .at-section__title{
+    .at-section__title {
         font-size: 2.5rem;
     }
 }
