@@ -851,7 +851,7 @@ footer .worldwide p {
     background: var(--gradient-color);
 }
 
-.our-Products .ti-close {
+.ti-close {
     width: 12px;
 }
 
@@ -873,20 +873,20 @@ footer .worldwide p {
 }
 
 @media (max-width: 1200px) {
-    .our-Products .product-gallery {
+    .product-gallery {
         margin-top: 40px;
     }
 }
 
-.our-Products .single-slider {
+.single-slider {
     border: 1px solid #ddd;
 }
 
-.our-Products .quickview-content {
+.quickview-content {
     padding: 40px 40px;
 }
 
-.our-Products .quickview-content h2 {
+.quickview-content h2 {
     font-size: 22px;
     font-weight: 600;
     margin: 0 0 6px;
@@ -894,18 +894,18 @@ footer .worldwide p {
     margin-bottom: 40px;
 }
 
-.our-Products .quickview-content .description h4 {
+.quickview-content .description h4 {
     color: #444;
 }
 
-.our-Products .quickview-content .description p {
+.quickview-content .description p {
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
     color: #333;
 }
 
-.our-Products .quickview-content .description ul {
+.quickview-content .description ul {
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
@@ -913,32 +913,32 @@ footer .worldwide p {
     list-style: circle;
 }
 
-.our-Products .quickview-content .description li {
+.quickview-content .description li {
     margin-left: 40px;
 }
 
-.our-Products .ti-eye {
+.ti-eye {
     width: 25px;
 }
 
-.our-Products .view_details a {
+.view_details a {
     position: relative;
     text-decoration: none;
     color: #444;
     /* transition: all .5s ease; */
 }
 
-.our-Products .view_details a:hover {
+.view_details a:hover {
     background: var(--gradient-color);
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.our-Products .view_details a:hover .ti-eye {
+.view_details a:hover .ti-eye {
     opacity: .5;
 }
 
-.our-Products .view_details a::before {
+.view_details a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -951,7 +951,7 @@ footer .worldwide p {
     transition: transform 0.5s;
 }
 
-.our-Products .view_details a:hover::before {
+.view_details a:hover::before {
     transform: scaleX(1);
 }
 
