@@ -133,7 +133,7 @@ body {
 .navbar-dark .navbar-nav .show>.nav-link {
     color: #f7a321;
 }
-
+.cat-link{border: 1px solid #555;}
 .navbar-dark .navbar-toggler {
     background-color: #035983;
 }
@@ -628,13 +628,43 @@ footer .worldwide p {
 
 .contact .send-btn {
     text-align: right;
+    position: relative;
 }
 
 .contact .send-btn input {
     color: #fff;
     background: #111;
+    padding-right: 40px;
+    outline: unset;
+    box-shadow: none;
+    transition: all .3s ease;
+}
+.contact .send-btn #send,
+.contact .send-btn #loader{
+    width: 20px;
+    position: absolute;
+    right: 7px;
+    top: 9px;
 }
 
+.contact .send-btn #loader{
+    display: none;
+}
+.contact .send-btn input:hover{
+    transform: scale(1.02);
+}
+.contact .send-btn #btn.disabled{
+    transform: none !important;
+}
+.contact .with-errors{
+    font-size: 14px;
+}
+.contact .send-btn #msgSubmit{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    font-size: 15px;
+}
 .contact .infos {
     margin-top: 22%;
 }

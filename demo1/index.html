@@ -51,6 +51,9 @@
                     <li class="nav-item">
                         <a class="nav-link" data-scroll-nav='3'>Contact Us</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link cat-link" href="https://carexa.wixsite.com/main/products" target="_blank">Catalog</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -285,50 +288,57 @@
 
                 <div class="col-md-6 col-sm-12">
                     <div class="form">
-                        <form id="my_form" method="post" onsubmit="submitForm(); return false;">
+                        <form role="form" id="contactForm" class="contact-form" data-toggle="validator" method="POST">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
                                         <input id="name" class="form-control" type="text" name="name"
-                                            placeholder="Your Name" required="">
+                                            placeholder="Your Name"  data-error="Name Is Required" required>
+                                        <div class="help-block with-errors text-danger pl-1"></div>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
                                         <input id="address" class="form-control" type="text" name="address"
-                                            placeholder="Address" required="">
+                                            placeholder="Address" data-error="Address Is Required" required>
+                                        <div class="help-block with-errors text-danger pl-1"></div>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
                                         <input id="email" class="form-control" type="email" name="email"
-                                            placeholder="Your Email" required="">
+                                            placeholder="Your Email" data-error="Email Is Required" required>
+                                        <div class="help-block with-errors text-danger pl-1"></div>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
                                         <input id="phone" class="form-control" type="tel" name="phone"
-                                            placeholder="Your Phone">
+                                            placeholder="Your Phone" data-error="Phone Is Required"  required>
+                                        <div class="help-block with-errors text-danger pl-1"></div>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input id="subject" class="form-control" type="text" name="subject"
-                                            placeholder="Subject">
+                                        <input id="msg_subject" class="form-control" type="text" name="subject"
+                                            placeholder="Subject" data-error="Subject Is required" required>
+                                        <div class="help-block with-errors text-danger pl-1"></div>    
                                     </div>
                                 </div>
                             </div>
                             <div class="message">
                                 <div class="form-group">
                                     <textarea id="msg" class="form-control" placeholder="Write Your message here ..."
-                                        required=""></textarea>
+                                    data-error="Message Is required"  required></textarea>
+                                    <div class="help-block with-errors text-danger pl-1"></div>
                                 </div>
                                 <p class="send-btn">
                                     <span>
-                                        <input id="btn" class="btn" type="submit" value="Send Message"><i
-                                            class="fas fa-long-arrow-alt-right"></i>
+                                        <input id="btn" class="btn" type="submit" value="Send Message">
+                                        <img src="assets/img/send.svg" id="send" alt="send">
+                                        <img src="assets/img/preloader.gif" id="loader" alt="preloader">
                                     </span>
-                                    <span id="status"></span>
+                                    <span id="msgSubmit"></span>
                                 </p>
                             </div>
                         </form>
@@ -353,7 +363,7 @@
                 <div class="col-md-6">
                     <div class="worldwide">
                         <img src="assets/img/rocket.svg"  width="40" alt="">
-                        <p>we ship worldwide</p>
+                        <p>We deliver everywhere</p>
                     </div>
                     <div class="copyright">
                         <p>&copy; <script type="text/javascript">
@@ -375,6 +385,10 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <!-- scrollIt -->
     <script src="assets/js/scrollIt.min.js"></script>
+    <!-- form-validator -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- contact-form-script -->
+    <script src="assets/js/contact-form-script.js"></script>
     <!-- Main js -->
     <script src="assets/js/main.js"></script>
 
